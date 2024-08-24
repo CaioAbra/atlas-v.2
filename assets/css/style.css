@@ -387,11 +387,44 @@ section#dobra_2 .btn.hero {
 
 section#dobra_3 {
   min-height: 100vh;
+  background: url("./../../src/img/dobra_3/BG03.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section#dobra_3 h2 {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 6rem;
   letter-spacing: 22px;
+  color: var(--color-orange);
+}
+section#dobra_3 img {
+  width: 100%;
+  margin-top: 18rem;
+}
+@media screen and (min-width: 768px) {
+  section#dobra_3 img {
+    margin-top: 9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#dobra_3 img {
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section#dobra_3 img {
+    margin-top: 0.7rem;
+  }
+}
+section#dobra_3 .cardsIcon .cardimgIcon {
+  display: inline-flex;
+  align-items: center;
+}
+section#dobra_3 .cardsIcon .cardimgIcon img {
+  margin-top: 0;
+}
+section#dobra_3 .cardsIcon .text-orange {
   color: var(--color-orange);
 }
 

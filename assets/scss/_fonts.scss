@@ -1,60 +1,24 @@
 @font-face {
-    font-family: 'DXRigraf-SemiBold';
-    src: url('../fonts/DXRigraf-SemiBold.otf');
-    // font-weight: 700;
-    // font-style: normal;
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('../fonts/SpaceGrotesk-Bold.ttf');
 }
-
-
 
 @font-face {
-    font-family: 'DXRigraf-SemiBoldExpanded';
-    src: url('../fonts/DXRigraf-SemiBoldExpanded.otf');
-    // font-weight: 300;
-    // font-style: normal;
+    font-family: 'SpaceGrotesk-Light';
+    src: url('../fonts/SpaceGrotesk-Light.ttf');
 }
-
 
 @font-face {
-    font-family: 'DxDynamix-BoldSlanted';
-    src: url('../fonts/DxDynamix-BoldSlanted.otf');
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('../fonts/SpaceGrotesk-Medium.ttf');
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: DXRigraf-SemiBold !important;
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('../fonts/SpaceGrotesk-Regular.ttf');
 }
 
-p,
-button,
-a {
-    font-family: DXRigraf-SemiBoldExpanded !important;
-}
-
-
-h2,
-h3,
-h5,
-h2.accordion-header {
-    @media screen and (max-width:768px) {
-        // font-size: 30px !important;
-        line-height: normal !important;
-    }
-}
-
-p {
-    @media screen and (max-width:768px) {
-        // font-size: 14px !important;
-        line-height: normal !important;
-    }
-}
-
-a.btn {
-    @media screen and (max-width:768px) {
-        // font-size: 10px !important;
-        line-height: normal !important;
-    }
+@font-face {
+    font-family: 'SpaceGrotesk-SemiBold';
+    src: url('../fonts/SpaceGrotesk-SemiBold.ttf');
 }

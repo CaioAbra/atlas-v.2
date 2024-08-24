@@ -1,0 +1,121 @@
+section#dobra_2 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    min-height: 100vh;
+    background-position-x: center !important;
+
+    background: url('./../../src/img/dobra_2/BG02.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    h2 {
+        text-align: center;
+        color: var(--color-White);
+        font-size: 1.75rem;
+    }
+
+    .card {
+        margin-top: 3rem;
+        background-color: #090909;
+        border-radius: 8px;
+
+        .card-body {
+            background-color: #090909;
+            border-radius: 8px;
+
+            .list-group-horizontal {
+                // justify-content: space-between;
+
+                li {
+                    background-color: #090909;
+                    // width: 100%;
+                    font-size: 1rem;
+                    border: none;
+                    color: var(--color-White);
+
+                    .compostName {
+                        color: #404040;
+                    }
+
+                    img {
+                        height: 1rem;
+                        width: 1rem;
+                        margin-right: .2rem;
+                    }
+
+                    &.icon_moeda {
+                        // width: 150%;
+                    }
+
+                    &.value {
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin-left: auto;
+                        // width: 50%;
+
+                    }
+
+                    &.percent {
+                        min-width: 96px;
+
+                        &.red {
+                            color: #b63232;
+                        }
+
+                        &.green {
+                            color: #00cb7a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .resultados {
+        p {
+            font-size: 22px;
+            text-align: center;
+            color: var(--whit-gray);
+        }
+
+        .card {
+            .card-body {
+                h5.card-title {
+                    color: var(--whit-gray) !important;
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @media screen and (min-width:500px) {
+                min-height: 260px;
+            }
+
+            @media screen and (min-width:768px) {
+                min-height: 356px;
+            }
+
+
+
+        }
+    }
+
+    .btn.hero {
+        display: inline-flex;
+        background-color: var(--bg-btn);
+        color: #000;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        position: relative;
+        font-size: 12px;
+        align-items: center;
+    }
+
+}

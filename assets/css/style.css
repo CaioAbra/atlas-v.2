@@ -24,53 +24,51 @@
   --color-footer-text-hover: #FFFFFF;
   --color-orange: #f0a747;
   --color-gray: #828282;
+  --color-White: #FFFFFF;
+  --whit-gray: #afafaf;
 }
 
 @font-face {
-  font-family: "DXRigraf-SemiBold";
-  src: url("../fonts/DXRigraf-SemiBold.otf");
+  font-family: "SpaceGrotesk-Bold";
+  src: url("../fonts/SpaceGrotesk-Bold.ttf");
 }
 @font-face {
-  font-family: "DXRigraf-SemiBoldExpanded";
-  src: url("../fonts/DXRigraf-SemiBoldExpanded.otf");
+  font-family: "SpaceGrotesk-Light";
+  src: url("../fonts/SpaceGrotesk-Light.ttf");
 }
 @font-face {
-  font-family: "DxDynamix-BoldSlanted";
-  src: url("../fonts/DxDynamix-BoldSlanted.otf");
+  font-family: "SpaceGrotesk-Medium";
+  src: url("../fonts/SpaceGrotesk-Medium.ttf");
 }
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url("../fonts/SpaceGrotesk-Regular.ttf");
+}
+@font-face {
+  font-family: "SpaceGrotesk-SemiBold";
+  src: url("../fonts/SpaceGrotesk-SemiBold.ttf");
+}
+h2,
+h5,
+.btn {
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: DXRigraf-SemiBold !important;
+h5,
+h6 {
+  font-family: SpaceGrotesk-Bold;
 }
 
 p,
-button,
-a {
-  font-family: DXRigraf-SemiBoldExpanded !important;
-}
-
-@media screen and (max-width: 768px) {
-  h2,
-  h3,
-  h5,
-  h2.accordion-header {
-    line-height: normal !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  p {
-    line-height: normal !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  a.btn {
-    line-height: normal !important;
-  }
+a,
+ul,
+li,
+span {
+  font-family: SpaceGrotesk-Regular;
 }
 
 header#header {
@@ -263,8 +261,7 @@ section#hero-section .container {
   padding-top: 4rem;
 }
 section#hero-section h2 {
-  font-family: Good Timing;
-  font-size: 43px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 48.86px;
   text-align: left;
@@ -274,7 +271,6 @@ section#hero-section h2 span {
   color: var(--color-title-detailer-hero-section);
 }
 section#hero-section p {
-  font-family: D-DIN Exp;
   font-size: 1rem;
   font-weight: 400;
   line-height: 29.08px;
@@ -290,7 +286,7 @@ section#hero-section .btn.hero {
   border-radius: 4px;
   font-weight: bold;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   align-items: center;
   margin-bottom: 1rem;
 }
@@ -302,90 +298,90 @@ section#hero-section .row_persons img {
   width: 1.375rem;
 }
 
-section#difference {
+section#dobra_2 {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
+  min-height: 100vh;
+  background-position-x: center !important;
+  background: url("./../../src/img/dobra_2/BG02.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-section#difference h2 {
-  color: var(--color-title-hero-section);
+section#dobra_2 h2 {
+  text-align: center;
+  color: var(--color-White);
+  font-size: 1.75rem;
 }
-section#difference h2 span {
-  color: var(--color-title-detailer-hero-section);
-}
-section#difference .row-cards {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-section#difference .row-cards .card {
-  background: linear-gradient(120deg, rgba(0, 119, 255, 0.1882352941) 34%, rgba(0, 119, 255, 0) 68%);
-  border: none;
-  max-height: 394px;
+section#dobra_2 .card {
+  margin-top: 3rem;
+  background-color: #090909;
   border-radius: 8px;
 }
-@media screen and (min-width: 768px) {
-  section#difference .row-cards .card {
-    height: 100%;
-  }
+section#dobra_2 .card .card-body {
+  background-color: #090909;
+  border-radius: 8px;
 }
-@media screen and (max-width: 768px) {
-  section#difference .row-cards .card {
-    margin-top: 1rem;
-  }
+section#dobra_2 .card .card-body .list-group-horizontal li {
+  background-color: #090909;
+  font-size: 1rem;
+  border: none;
+  color: var(--color-White);
 }
-section#difference .row-cards .card .card-body {
-  padding: 72px 30px !important;
+section#dobra_2 .card .card-body .list-group-horizontal li .compostName {
+  color: #404040;
 }
-section#difference .row-cards .card .card-body h5 {
-  font-size: 34px;
+section#dobra_2 .card .card-body .list-group-horizontal li img {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.2rem;
+}
+section#dobra_2 .card .card-body .list-group-horizontal li.value {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+}
+section#dobra_2 .card .card-body .list-group-horizontal li.percent {
+  min-width: 96px;
+}
+section#dobra_2 .card .card-body .list-group-horizontal li.percent.red {
+  color: #b63232;
+}
+section#dobra_2 .card .card-body .list-group-horizontal li.percent.green {
+  color: #00cb7a;
+}
+section#dobra_2 .resultados p {
+  font-size: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--whit-gray);
 }
-section#difference .row-cards .card .card-body p {
-  font-size: 0.9rem;
-  color: #C1C0FA;
+section#dobra_2 .resultados .card .card-body h5.card-title {
+  color: var(--whit-gray) !important;
+  font-size: 1.7rem;
 }
-section#difference .row-cards .card .card-body div.card-text ul {
-  list-style-type: none;
-  padding: 0;
+section#dobra_2 .resultados .card .card-body p {
+  font-size: 1.2rem;
 }
-section#difference .row-cards .card .card-body div.card-text li {
+@media screen and (min-width: 500px) {
+  section#dobra_2 .resultados .card {
+    min-height: 260px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#dobra_2 .resultados .card {
+    min-height: 356px;
+  }
+}
+section#dobra_2 .btn.hero {
+  display: inline-flex;
+  background-color: var(--bg-btn);
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
   position: relative;
-  padding-left: 25px;
-  color: #C1C0FA;
-  font-family: DXRigraf-SemiBoldExpanded;
-}
-section#difference .row-cards .card .card-body div.card-text li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background: url("../../src/img/Vector.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#difference a.btn.hero {
-  background: var(--bg-btn);
-  box-shadow: var(--box-shadow-btn);
-  color: var(--color-btn);
-  font-family: Good Timing;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 23.4px;
-  text-align: center;
-  border-radius: 7.24px;
-  transition: all 0.5s ease;
-}
-section#difference a.btn.hero:hover {
-  transform: scale(1.1);
-}
-@media screen and (min-width: 768px) {
-  section#difference a.btn.hero {
-    padding: 1rem 56px;
-  }
+  font-size: 12px;
+  align-items: center;
 }
 
 section#mockup-section {

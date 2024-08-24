@@ -4,11 +4,10 @@
   --bg-navbar-active: #333;
   --color-accordion-header-open: rgba(255, 255, 255, 0.5);
   --color-btn-login-bg: none;
-  --color-btn-login-border: rgba(255, 255, 255, 0.5);
-  --color-btn-login-text: rgba(255, 255, 255, 1);
-  --color-btn-register-bg: #0075FF;
+  --color-btn-login-border: #838282;
+  --color-btn-login-text: #838282;
+  --color-btn-register-bg: #bababa;
   --color-btn-register-text: #FFFFFF;
-  --color-btn-register-box-shadow: rgba(186, 76, 14, 0.04);
   --color-title-hero-section: #ffffff;
   --color-title-detailer-hero-section: #FF6634;
   --color-text-hero-section: #8f8f8e;
@@ -79,6 +78,7 @@ header#header nav.navbar {
   height: 100%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  justify-content: center;
 }
 header#header nav.navbar .navbar-container {
   display: flex;
@@ -168,9 +168,46 @@ header#header nav.navbar .navbar-brand img {
     justify-content: center !important;
   }
 }
+@media screen and (max-width: 768px) {
+  header#header nav.navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   header#header {
     align-content: center;
+  }
+}
+header#header .btn-login {
+  background: var(--color-btn-login-bg);
+  border-color: var(--color-btn-login-border);
+  color: var(--color-btn-login-text);
+}
+header#header .btn-login:hover {
+  background: var(--color-btn-register-bg);
+  box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+  color: var(--color-btn-register-text);
+}
+@media screen and (min-width: 768px) {
+  header#header .btn-login {
+    margin-right: 1rem;
+  }
+}
+header#header .btn-register {
+  background: var(--color-btn-register-bg);
+  box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+  color: var(--color-btn-register-text);
+  opacity: 1;
+}
+header#header .btn-register:hover {
+  background: var(--color-btn-login-bg);
+  border-color: var(--color-btn-login-border);
+  color: var(--color-btn-login-text);
+}
+@media screen and (min-width: 768px) {
+  header#header .btn-register {
+    margin-left: 1rem;
   }
 }
 
@@ -252,6 +289,7 @@ section#hero-section .btn.hero {
   font-weight: bold;
   position: relative;
   font-size: 14px;
+  align-items: center;
 }
 
 section#difference {

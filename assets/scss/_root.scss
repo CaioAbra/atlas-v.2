@@ -1,15 +1,19 @@
 :root {
     --bg-body: #0c0e22;
 
+    //navbar
     --color-hamburger-bar: #d3c2c2; // Cor das barras do hamburger
     --bg-navbar-active: #333; // Cor de fundo ativa da navbar
+    
     --color-accordion-header-open: rgba(255, 255, 255, 0.5); // Cor da borda do acordeão
+
     --color-btn-login-bg: none; // Cor de fundo do botão de login
-    --color-btn-login-border: rgba(255, 255, 255, 0.5); // Cor da borda do botão de login
-    --color-btn-login-text: rgba(255, 255, 255, 1); // Cor do texto do botão de login
-    --color-btn-register-bg: #0075FF; // Cor de fundo do botão de registro
+    --color-btn-login-border: #838282; // Cor da borda do botão de login
+    --color-btn-login-text: #838282; // Cor do texto do botão de login
+
+    --color-btn-register-bg: #bababa; // Cor de fundo do botão de registro
     --color-btn-register-text: #FFFFFF; // Cor de fundo do botão de registro
-    --color-btn-register-box-shadow: rgba(186, 76, 14, 0.04); // Sombra do botão de registro
+    // --color-btn-register-box-shadow: rgba(186, 76, 14, 0.04); // Sombra do botão de registro
 
 
     // hero

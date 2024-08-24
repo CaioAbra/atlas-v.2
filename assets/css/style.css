@@ -303,6 +303,7 @@ section#dobra_2 {
   padding-bottom: 6.25rem;
   min-height: 100vh;
   background-position-x: center !important;
+  background-position-y: center !important;
   background: url("./../../src/img/dobra_2/BG02.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,17 +385,14 @@ section#dobra_2 .btn.hero {
   align-items: center;
 }
 
-section#mockup-section {
-  padding-bottom: 6.25rem;
+section#dobra_3 {
+  min-height: 100vh;
 }
-section#mockup-section h2 {
-  color: var(--color-title-hero-section);
-}
-section#mockup-section h2 span {
-  color: var(--color-title-detailer-hero-section);
-}
-section#mockup-section img {
-  width: 100%;
+section#dobra_3 h2 {
+  text-align: center;
+  margin-top: 3rem;
+  letter-spacing: 22px;
+  color: var(--color-orange);
 }
 
 section#faq-section {

@@ -1,0 +1,156 @@
+header#header {
+    height: 87px;
+
+    nav.navbar {
+        height: 100%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 1rem;
+
+            button.hamburger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                border: none;
+                background: none;
+                padding: 0;
+                z-index: 10;
+
+                @media (max-width: 768px) {
+                    display: flex;
+                }
+
+                span.bar {
+                    height: 3px;
+                    width: 25px;
+                    background: var(--color-hamburger-bar);
+                    margin: 4px 0;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .nav-menu {
+                display: flex;
+                gap: 1.25rem;
+                margin-top: 0;
+
+                a.btn {
+                    padding: .625rem 3rem !important;
+                    font-family: goodtiming;
+                    height: 45px;
+                    align-content: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: auto;
+                    border-style: solid;
+                    border-width: 2.17px;
+                    border-radius: 8.69px;
+                }
+
+                .btn-login {
+                    background: var(--color-btn-login-bg);
+                    border-color: var(--color-btn-login-border);
+                    color: var(--color-btn-login-text);
+
+                    &:hover {
+                        background: var(--color-btn-register-bg);
+                        box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+                        color: var(--color-btn-register-text);
+                    }
+                }
+
+                .btn-register {
+                    background: var(--color-btn-register-bg);
+                    box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
+                    color: var(--color-btn-register-text);
+                    padding: 1.125rem 3rem;
+                    opacity: 1;
+
+                    &:hover {
+                        background: var(--color-btn-login-bg);
+                        border-color: var(--color-btn-login-border);
+                        color: var(--color-btn-login-text);
+                    }
+                }
+            }
+        }
+
+        &.active {
+            background: var(--bg-navbar-active);
+        }
+
+        .navbar-brand {
+            width: 5rem;
+            margin: auto;
+
+            img {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+
+                justify-content: center !important;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        // height: 87px;
+        align-content: center;
+    }
+}
+
+// Ajustes para mobile
+@media (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: var(--bg-navbar-active);
+        z-index: 5;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+        border-bottom: solid 2px var(--color-accordion-header-open);
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        max-height: 18.75rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-top: 1.5rem !important;
+        // margin-top: 1rem;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -10px);
+    }
+}

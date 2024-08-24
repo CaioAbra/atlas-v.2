@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'DXRigraf-SemiBold';
+    src: url('../fonts/DXRigraf-SemiBold.otf');
+    // font-weight: 700;
+    // font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'DXRigraf-SemiBoldExpanded';
+    src: url('../fonts/DXRigraf-SemiBoldExpanded.otf');
+    // font-weight: 300;
+    // font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DxDynamix-BoldSlanted';
+    src: url('../fonts/DxDynamix-BoldSlanted.otf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: DXRigraf-SemiBold !important;
+}
+
+p,
+button,
+a {
+    font-family: DXRigraf-SemiBoldExpanded !important;
+}
+
+
+h2,
+h3,
+h5,
+h2.accordion-header {
+    @media screen and (max-width:768px) {
+        // font-size: 30px !important;
+        line-height: normal !important;
+    }
+}
+
+p {
+    @media screen and (max-width:768px) {
+        // font-size: 14px !important;
+        line-height: normal !important;
+    }
+}
+
+a.btn {
+    @media screen and (max-width:768px) {
+        // font-size: 10px !important;
+        line-height: normal !important;
+    }
+}

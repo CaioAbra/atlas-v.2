@@ -1,0 +1,36 @@
+:root {
+    --bg-body: #0c0e22;
+
+    --color-hamburger-bar: #d3c2c2; // Cor das barras do hamburger
+    --bg-navbar-active: #333; // Cor de fundo ativa da navbar
+    --color-accordion-header-open: rgba(255, 255, 255, 0.5); // Cor da borda do acordeão
+    --color-btn-login-bg: none; // Cor de fundo do botão de login
+    --color-btn-login-border: rgba(255, 255, 255, 0.5); // Cor da borda do botão de login
+    --color-btn-login-text: rgba(255, 255, 255, 1); // Cor do texto do botão de login
+    --color-btn-register-bg: #0075FF; // Cor de fundo do botão de registro
+    --color-btn-register-text: #FFFFFF; // Cor de fundo do botão de registro
+    --color-btn-register-box-shadow: rgba(186, 76, 14, 0.04); // Sombra do botão de registro
+
+
+    // hero
+    --color-title-hero-section: #ffffff;
+    --color-title-detailer-hero-section: #FF6634;
+    --color-text-hero-section: #8f8f8e;
+
+    --bg-btn: #0075FF;
+    --box-shadow-btn: 0px 20.3px 41.55px 0px #0077ff52;
+    --color-btn: #FFFFFF;
+
+    //acordeon
+    --color-bg-accordion: linear-gradient(90deg, rgb(0, 117, 255, 0.3) -19%, rgba(255, 119, 26, 0) 120.71%);
+    --color-accordion-header: #FFFFFF;
+    --color-accordion-header-open: #FFFFFF;
+    --color-accordion-body: #C1C0FA;
+
+
+    //footer
+    --color-bg-footer: url('../../src/img/bg-footer.webp');
+    --color-footer-text: #C1C0FA;
+    --color-bg-navbar-active: #0075FF;
+    --color-footer-text-hover: #FFFFFF;
+}

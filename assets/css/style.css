@@ -9,10 +9,10 @@
   --color-btn-register-bg: #bababa;
   --color-btn-register-text: #FFFFFF;
   --color-title-hero-section: #ffffff;
-  --color-title-detailer-hero-section: #FF6634;
-  --color-text-hero-section: #8f8f8e;
-  --bg-btn: #0075FF;
-  --box-shadow-btn: 0px 20.3px 41.55px 0px #0077ff52;
+  --color-title-detailer-hero-section: #f0a747;
+  --color-text-hero-section: #828282;
+  --bg-btn: #f0a747;
+  --box-shadow-btn: 0px 20.3px 41.55px 0px #f0a74752;
   --color-btn: #FFFFFF;
   --color-bg-accordion: linear-gradient(90deg, rgb(0, 117, 255, 0.3) -19%, rgba(255, 119, 26, 0) 120.71%);
   --color-accordion-header: #FFFFFF;
@@ -22,6 +22,8 @@
   --color-footer-text: #C1C0FA;
   --color-bg-navbar-active: #0075FF;
   --color-footer-text-hover: #FFFFFF;
+  --color-orange: #f0a747;
+  --color-gray: #828282;
 }
 
 @font-face {
@@ -281,7 +283,7 @@ section#hero-section p {
 }
 section#hero-section .btn.hero {
   display: inline-flex;
-  background-color: #f89c1c;
+  background-color: var(--bg-btn);
   color: #000;
   padding: 10px;
   text-decoration: none;
@@ -290,6 +292,14 @@ section#hero-section .btn.hero {
   position: relative;
   font-size: 14px;
   align-items: center;
+  margin-bottom: 1rem;
+}
+section#hero-section .row_persons {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+section#hero-section .row_persons img {
+  width: 1.375rem;
 }
 
 section#difference {
@@ -544,6 +554,14 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--bg-body);
+}
+
+.color-orange {
+  color: var(--color-orange);
+}
+
+.color-gray {
+  color: var(--color-gray);
 }
 
 /*# sourceMappingURL=style.css.map */

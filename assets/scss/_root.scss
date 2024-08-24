@@ -4,7 +4,7 @@
     //navbar
     --color-hamburger-bar: #d3c2c2; // Cor das barras do hamburger
     --bg-navbar-active: #333; // Cor de fundo ativa da navbar
-    
+
     --color-accordion-header-open: rgba(255, 255, 255, 0.5); // Cor da borda do acordeão
 
     --color-btn-login-bg: none; // Cor de fundo do botão de login
@@ -18,11 +18,11 @@
 
     // hero
     --color-title-hero-section: #ffffff;
-    --color-title-detailer-hero-section: #FF6634;
-    --color-text-hero-section: #8f8f8e;
+    --color-title-detailer-hero-section: #f0a747;
+    --color-text-hero-section: #828282;
 
-    --bg-btn: #0075FF;
-    --box-shadow-btn: 0px 20.3px 41.55px 0px #0077ff52;
+    --bg-btn: #f0a747;
+    --box-shadow-btn: 0px 20.3px 41.55px 0px #f0a74752;
     --color-btn: #FFFFFF;
 
     //acordeon
@@ -37,4 +37,8 @@
     --color-footer-text: #C1C0FA;
     --color-bg-navbar-active: #0075FF;
     --color-footer-text-hover: #FFFFFF;
+
+    //all
+    --color-orange: #f0a747;
+    --color-gray: #828282;
 }

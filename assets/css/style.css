@@ -401,10 +401,12 @@ section#dobra_3 img {
   width: 100%;
   margin-top: 18rem;
   margin-bottom: 5rem;
+  transform: scale(1.5);
 }
 @media screen and (min-width: 768px) {
   section#dobra_3 img {
     margin-top: 9rem;
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -528,7 +530,7 @@ section#dobra_5 h5 {
 }
 section#dobra_5 h3 {
   margin-top: 1.5rem;
-  color: var(--whit-grayF);
+  color: var(--whit-gray);
 }
 section#dobra_5 h5 {
   margin-top: 3rem;
@@ -768,6 +770,10 @@ body {
 
 .color-gray {
   color: var(--color-gray);
+}
+
+.color-white-gray {
+  color: var(--whit-gray);
 }
 
 .btn {

@@ -419,6 +419,9 @@ section#dobra_3 img {
     margin-top: 0.7rem;
   }
 }
+section#dobra_3 .cardsIcon {
+  align-items: center;
+}
 section#dobra_3 .cardsIcon .cardimgIcon {
   display: inline-flex;
   align-items: center;
@@ -504,6 +507,49 @@ section#dobra_4 .btn.hero {
   position: relative;
   font-size: 12px;
   align-items: center;
+}
+
+section#dobra_5 {
+  min-height: 100vh;
+  background: url("./../../src/img/dobra_5/BG05.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+}
+section#dobra_5 h2 {
+  padding-top: 3rem;
+  color: var(--color-White);
+  text-align: center;
+  font-size: 28px;
+}
+section#dobra_5 h3,
+section#dobra_5 h5 {
+  text-align: center;
+  font-size: 1rem;
+}
+section#dobra_5 h3 {
+  margin-top: 1.5rem;
+  color: var(--whit-grayF);
+}
+section#dobra_5 h5 {
+  margin-top: 3rem;
+  color: var(--color-orange);
+}
+section#dobra_5 img {
+  width: 22rem;
+}
+section#dobra_5 #jumping-image {
+  position: relative;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 section#faq-section {

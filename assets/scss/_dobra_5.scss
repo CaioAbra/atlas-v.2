@@ -1,0 +1,53 @@
+section#dobra_5 {
+    min-height: 100vh;
+    background: url('./../../src/img/dobra_5/BG05.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+
+    h2 {
+        padding-top: 3rem;
+        color: var(--color-White);
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+    h3,
+    h5 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    h3 {
+        margin-top: 1.5rem;
+        color: var(--whit-grayF);
+    }
+
+    h5 {
+        margin-top: 3rem;
+        color: var(--color-orange);
+    }
+
+    img {
+        width: 22rem;
+    }
+
+    #jumping-image {
+        position: relative;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}

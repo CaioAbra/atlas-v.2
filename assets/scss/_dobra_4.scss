@@ -55,6 +55,43 @@ section#dobra_4 {
             border-radius: 8px;
             margin-bottom: 1rem;
         }
+
+        position: relative;
+        /* Necessário para o posicionamento do pseudo-elemento */
+        // padding: 2rem;
+        border-radius: 8px;
+        /* Borda arredondada */
+        background-color: #1a1a1a;
+        /* Cor de fundo do card */
+        color: #ffffff;
+        /* Cor do texto */
+        // text-align: center;
+        // z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px;
+            /* Mesma borda arredondada do card */
+            padding: .6px;
+            /* Espessura da borda */
+            background: linear-gradient(0deg, #f99f38, #828282);
+            /* Gradiente da borda */
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            -webkit-mask-composite: destination-out;
+            // z-index: -1;
+            /* Coloca a borda atrás do conteúdo */
+        }
     }
 
     @media screen and (min-width:1024px) {

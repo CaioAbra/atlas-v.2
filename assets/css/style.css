@@ -577,6 +577,14 @@ section#dobra_4 .mockUp {
 }
 section#dobra_4 .card {
   background-color: rgba(9, 9, 9, 0.3137254902);
+  position: relative;
+  /* Necessário para o posicionamento do pseudo-elemento */
+  border-radius: 8px;
+  /* Borda arredondada */
+  background-color: #1a1a1a;
+  /* Cor de fundo do card */
+  color: #ffffff;
+  /* Cor do texto */
 }
 section#dobra_4 .card .card-body {
   padding: 2.6rem;
@@ -598,6 +606,25 @@ section#dobra_4 .card img {
   width: 3rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+section#dobra_4 .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  /* Mesma borda arredondada do card */
+  padding: 0.6px;
+  /* Espessura da borda */
+  background: linear-gradient(0deg, #f99f38, #828282);
+  /* Gradiente da borda */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  /* Coloca a borda atrás do conteúdo */
 }
 @media screen and (min-width: 1024px) {
   section#dobra_4 .container-flex {

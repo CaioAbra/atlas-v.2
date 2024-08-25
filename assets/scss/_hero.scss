@@ -35,12 +35,19 @@ section#hero-section {
         padding-top: 4rem;
     }
 
+    img {
+        width: 5rem;
+    }
+
     h2 {
         font-size: 36px;
-        font-weight: 700;
-        line-height: 48.86px;
+        // font-weight: 700;
+        line-height: 38px;
         text-align: left;
-        color: var(--color-title-hero-section);
+        background: linear-gradient(120deg, #ffffff, #BA4C0E);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
 
         span {
             color: var(--color-title-detailer-hero-section);
@@ -54,7 +61,7 @@ section#hero-section {
     p {
         font-size: 1rem;
         font-weight: 400;
-        line-height: 29.08px;
+        line-height: 18px;
         text-align: left;
         color: var(--color-text-hero-section);
 
@@ -74,16 +81,22 @@ section#hero-section {
         position: relative;
         font-size: 12px;
         align-items: center;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
     }
 
     .row_persons {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: .8rem;
 
         img {
-            width: 1.375rem;
+            width: 1rem;
         }
     }
 
+    .row-btn {
+        img {
+            width: 32px;
+            // margin-left: .5rem;
+        }
+    }
 }

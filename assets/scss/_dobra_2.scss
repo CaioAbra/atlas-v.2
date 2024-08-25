@@ -12,14 +12,18 @@ section#dobra_2 {
 
     h2 {
         text-align: center;
-        color: var(--color-White);
         font-size: 1.75rem;
+        background: linear-gradient(120deg, #ffffff, #BA4C0E);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .card {
         margin-top: 3rem;
         background-color: #090909;
         border-radius: 8px;
+        border: none;
 
         .card-body {
             background-color: #090909;
@@ -71,6 +75,44 @@ section#dobra_2 {
                 }
             }
         }
+
+        position: relative;
+        /* Necessário para o posicionamento do pseudo-elemento */
+        // padding: 2rem;
+        border-radius: 8px;
+        /* Borda arredondada */
+        background-color: #1a1a1a;
+        /* Cor de fundo do card */
+        color: #ffffff;
+        /* Cor do texto */
+        text-align: center;
+        // z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px;
+            /* Mesma borda arredondada do card */
+            padding: .6px;
+            /* Espessura da borda */
+            background: linear-gradient(0deg, #f99f38, #828282);
+            /* Gradiente da borda */
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            -webkit-mask-composite: destination-out;
+            // z-index: -1;
+            /* Coloca a borda atrás do conteúdo */
+        }
+
     }
 
 
@@ -82,10 +124,18 @@ section#dobra_2 {
         }
 
         .card {
+            background-color: transparent;
+
             .card-body {
+                background-color: #09090980;
+
                 h5.card-title {
-                    color: var(--whit-gray) !important;
+                    // color: var(--whit-gray) !important;
                     font-size: 1.7rem;
+                    background: linear-gradient(#F0A647 9.47%, #BA4C0E 128.61%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
                 }
 
                 p {
@@ -102,6 +152,42 @@ section#dobra_2 {
             }
 
 
+            position: relative;
+            /* Necessário para o posicionamento do pseudo-elemento */
+            // padding: 2rem;
+            border-radius: 8px;
+            /* Borda arredondada */
+            background-color: #1a1a1a;
+            /* Cor de fundo do card */
+            color: #ffffff;
+            /* Cor do texto */
+            text-align: center;
+            // z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 8px;
+                /* Mesma borda arredondada do card */
+                padding: .6px;
+                /* Espessura da borda */
+                background: linear-gradient(0deg, #f99f38, #828282);
+                /* Gradiente da borda */
+                -webkit-mask:
+                    linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                mask:
+                    linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                mask-composite: exclude;
+                -webkit-mask-composite: destination-out;
+                // z-index: -1;
+                /* Coloca a borda atrás do conteúdo */
+            }
 
         }
     }

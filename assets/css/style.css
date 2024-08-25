@@ -6,8 +6,8 @@
   --color-accordion-header-open: rgba(255, 255, 255, 0.5);
   --color-btn-login-bg: none;
   --color-btn-login-border: #838282;
-  --color-btn-login-text: #838282;
-  --color-btn-register-bg: #bababa;
+  --color-btn-login-text: #FFFFFF;
+  --color-btn-register-bg: linear-gradient(87.36deg, #F0A647 9.47%, #BA4C0E 128.61%);
   --color-btn-register-text: #FFFFFF;
   --color-title-hero-section: #ffffff;
   --color-title-detailer-hero-section: #f0a747;
@@ -181,31 +181,39 @@ header#header .btn-login {
   background: var(--color-btn-login-bg);
   border-color: var(--color-btn-login-border);
   color: var(--color-btn-login-text);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  border-image: var(--color-btn-register-bg) 1;
+  transition: all 0.5s ease;
 }
 header#header .btn-login:hover {
   background: var(--color-btn-register-bg);
   box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
   color: var(--color-btn-register-text);
+  transform: scale(1);
 }
 @media screen and (min-width: 768px) {
   header#header .btn-login {
-    margin-right: 1rem;
+    margin-right: 0.2rem;
   }
 }
 header#header .btn-register {
   background: var(--color-btn-register-bg);
   box-shadow: 0px 22.44px 45.92px 0px var(--color-btn-register-box-shadow);
   color: var(--color-btn-register-text);
+  padding: 0.5rem 1.5rem;
   opacity: 1;
+  border-radius: 0px;
 }
 header#header .btn-register:hover {
   background: var(--color-btn-login-bg);
-  border-color: var(--color-btn-login-border);
+  border-color: var(--color-btn-register-text);
   color: var(--color-btn-login-text);
+  transform: scale(1);
 }
 @media screen and (min-width: 768px) {
   header#header .btn-register {
-    margin-left: 1rem;
+    margin-left: 0.2rem;
   }
 }
 
@@ -258,12 +266,17 @@ section#hero-section {
 section#hero-section .container {
   padding-top: 4rem;
 }
+section#hero-section img {
+  width: 5rem;
+}
 section#hero-section h2 {
   font-size: 36px;
-  font-weight: 700;
-  line-height: 48.86px;
+  line-height: 38px;
   text-align: left;
-  color: var(--color-title-hero-section);
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 section#hero-section h2 span {
   color: var(--color-title-detailer-hero-section);
@@ -271,7 +284,7 @@ section#hero-section h2 span {
 section#hero-section p {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 29.08px;
+  line-height: 18px;
   text-align: left;
   color: var(--color-text-hero-section);
 }
@@ -286,14 +299,16 @@ section#hero-section .btn.hero {
   position: relative;
   font-size: 12px;
   align-items: center;
-  margin-bottom: 1rem;
 }
 section#hero-section .row_persons {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 section#hero-section .row_persons img {
-  width: 1.375rem;
+  width: 1rem;
+}
+section#hero-section .row-btn img {
+  width: 32px;
 }
 
 section#dobra_2 {
@@ -308,13 +323,26 @@ section#dobra_2 {
 }
 section#dobra_2 h2 {
   text-align: center;
-  color: var(--color-White);
   font-size: 1.75rem;
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 section#dobra_2 .card {
   margin-top: 3rem;
   background-color: #090909;
   border-radius: 8px;
+  border: none;
+  position: relative;
+  /* Necessário para o posicionamento do pseudo-elemento */
+  border-radius: 8px;
+  /* Borda arredondada */
+  background-color: #1a1a1a;
+  /* Cor de fundo do card */
+  color: #ffffff;
+  /* Cor do texto */
+  text-align: center;
 }
 section#dobra_2 .card .card-body {
   background-color: #090909;
@@ -348,14 +376,51 @@ section#dobra_2 .card .card-body .list-group-horizontal li.percent.red {
 section#dobra_2 .card .card-body .list-group-horizontal li.percent.green {
   color: #00cb7a;
 }
+section#dobra_2 .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  /* Mesma borda arredondada do card */
+  padding: 0.6px;
+  /* Espessura da borda */
+  background: linear-gradient(0deg, #f99f38, #828282);
+  /* Gradiente da borda */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  /* Coloca a borda atrás do conteúdo */
+}
 section#dobra_2 .resultados p {
   font-size: 22px;
   text-align: center;
   color: var(--whit-gray);
 }
+section#dobra_2 .resultados .card {
+  background-color: transparent;
+  position: relative;
+  /* Necessário para o posicionamento do pseudo-elemento */
+  border-radius: 8px;
+  /* Borda arredondada */
+  background-color: #1a1a1a;
+  /* Cor de fundo do card */
+  color: #ffffff;
+  /* Cor do texto */
+  text-align: center;
+}
+section#dobra_2 .resultados .card .card-body {
+  background-color: rgba(9, 9, 9, 0.5019607843);
+}
 section#dobra_2 .resultados .card .card-body h5.card-title {
-  color: var(--whit-gray) !important;
   font-size: 1.7rem;
+  background: linear-gradient(#F0A647 9.47%, #BA4C0E 128.61%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 section#dobra_2 .resultados .card .card-body p {
   font-size: 1.2rem;
@@ -369,6 +434,25 @@ section#dobra_2 .resultados .card .card-body p {
   section#dobra_2 .resultados .card {
     min-height: 356px;
   }
+}
+section#dobra_2 .resultados .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  /* Mesma borda arredondada do card */
+  padding: 0.6px;
+  /* Espessura da borda */
+  background: linear-gradient(0deg, #f99f38, #828282);
+  /* Gradiente da borda */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  /* Coloca a borda atrás do conteúdo */
 }
 section#dobra_2 .btn.hero {
   display: inline-flex;
@@ -466,7 +550,10 @@ section#dobra_4 h2 {
   margin-top: 6rem;
   margin-bottom: 3rem;
   text-align: center;
-  color: var(--color-White);
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 28px;
 }
 section#dobra_4 .mockUp {
@@ -519,7 +606,10 @@ section#dobra_5 {
 }
 section#dobra_5 h2 {
   padding-top: 3rem;
-  color: var(--color-White);
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   text-align: center;
   font-size: 28px;
 }
@@ -564,7 +654,10 @@ section#dobra_6 {
 }
 section#dobra_6 h2 {
   padding-top: 5rem;
-  color: var(--color-White);
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   text-align: center;
 }
 section#dobra_6 p {

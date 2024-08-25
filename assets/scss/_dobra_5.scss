@@ -8,7 +8,10 @@ section#dobra_5 {
 
     h2 {
         padding-top: 3rem;
-        color: var(--color-White);
+        background: linear-gradient(120deg, #ffffff, #BA4C0E);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         text-align: center;
         font-size: 28px;
     }

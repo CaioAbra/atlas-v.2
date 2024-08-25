@@ -11,7 +11,10 @@ section#dobra_4 {
         margin-top: 6rem;
         margin-bottom: 3rem;
         text-align: center;
-        color: var(--color-White);
+        background: linear-gradient(120deg, #ffffff, #BA4C0E);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         font-size: 28px;
     }
 

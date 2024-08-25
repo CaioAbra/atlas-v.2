@@ -6,24 +6,7 @@ section#hero-section {
     background-position-y: center;
 
     @media screen and (max-width:500px) {
-        // background-size: 100vh;
-        background-position-x: 40%;
-        // background-position-y: 100%;
-
-        // h2.hero {
-        //     margin-top: 0 !important;
-        //     margin-bottom: 1rem !important;
-        // }
-
-        // a.btn.hero {
-        //     padding: 17px 40px !important;
-        //     margin-top: 56vh !important;
-        //     // margin-left: 2rem;
-        // }
-
-        // .row-btn {
-        //     text-align: center;
-        // }
+        background-position-x: center;
     }
 
     @media screen and (min-width:1366px) {
@@ -53,8 +36,8 @@ section#hero-section {
             color: var(--color-title-detailer-hero-section);
         }
 
-        @media screen and (min-width:768px) {
-            // width: 510px;
+        @media screen and (max-width:500px) {
+            font-size: 38px;
         }
     }
 

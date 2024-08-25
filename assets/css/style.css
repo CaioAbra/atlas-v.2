@@ -466,6 +466,9 @@ section#dobra_2 .btn.hero {
   font-size: 12px;
   align-items: center;
 }
+section#dobra_2 .row-btn img {
+  width: 32px;
+}
 
 section#dobra_3 {
   min-height: 100vh;
@@ -595,6 +598,9 @@ section#dobra_4 .btn.hero {
   font-size: 12px;
   align-items: center;
 }
+section#dobra_4 .row-btn img {
+  width: 32px;
+}
 
 section#dobra_5 {
   min-height: 100vh;
@@ -709,9 +715,12 @@ section#faq-section .container-faq {
   padding-bottom: 7.5rem;
 }
 section#faq-section h2 {
-  color: var(--color-White);
   padding-top: 5rem;
   padding-bottom: 56px;
+  background: linear-gradient(120deg, #ffffff, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 section#faq-section .accordion {
   width: 100%;

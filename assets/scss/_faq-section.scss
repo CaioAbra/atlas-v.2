@@ -4,9 +4,13 @@ section#faq-section {
     }
 
     h2 {
-        color: var(--color-White);
+        // color: var(--color-White);
         padding-top: 5rem;
         padding-bottom: 56px;
+        background: linear-gradient(120deg, #ffffff, #BA4C0E);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .accordion {

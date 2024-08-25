@@ -28,44 +28,53 @@ $('.accordion-header').click(function () {
 $(document).ready(function () {
     var $carouselItems = $(".carousel-items");
     var $items = $(".carousel-items .item");
-    var itemWidth = $items.outerWidth(true); // Largura dos itens
+    var itemWidth;
     var itemCount = $items.length;
-    var totalWidth; // Largura total do carousel
-    var visibleItems = 3; // Número de itens visíveis
-    var carouselInterval;
-    var intervalTime = 2000; // Tempo entre as transições (em milissegundos)
+    var visibleItems;
     var currentPosition = 0;
+    var intervalTime = 2000; // Tempo entre as transições (em milissegundos)
+    var carouselInterval;
 
     function setupCarousel() {
-        // Ajustar a largura do contêiner
-        // itemWidth = $items.outerWidth(true);
+        $items = $(".carousel-items .item");
         itemCount = $items.length;
-        // totalWidth = itemWidth * itemCount;
+        itemWidth = $items.outerWidth(true);
 
-        // Definir a largura total do contêiner para permitir o loop contínuo
-        $carouselItems.width(totalWidth * 2); // Largura é o dobro para o efeito de loop contínuo
-        $carouselItems.css("transform", "translateX(0)");
+        if (window.innerWidth < 768) {
+            visibleItems = 1;
+        } else if (window.innerWidth < 992) {
+            visibleItems = 2;
+        } else {
+            visibleItems = 3;
+        }
 
-        // Duplicar os itens para o efeito de rotação contínua
-        $carouselItems.append($items.clone());
+        $carouselItems.css({
+            "transition": "none",
+            "transform": "translateX(0px)"
+        });
+
+        currentPosition = 0;
     }
 
     function moveCarousel() {
         currentPosition -= itemWidth;
-        if (Math.abs(currentPosition) >= totalWidth) {
-            currentPosition = 0; // Reinicia a posição
-            $carouselItems.css("transition", "none");
-            $carouselItems.css("transform", "translateX(" + currentPosition + "px)");
+        $carouselItems.css("transition", "transform 0.5s ease-in-out");
+        $carouselItems.css("transform", "translateX(" + currentPosition + "px)");
+
+        if (Math.abs(currentPosition) >= itemWidth) {
+            // Após a animação, move o primeiro item para o final da lista e reajusta a posição
             setTimeout(function () {
-                $carouselItems.css("transition", "transform 0.5s ease-in-out");
-            }, 50);
-        } else {
-            $carouselItems.css("transform", "translateX(" + currentPosition + "px)");
+                $carouselItems.css("transition", "none");
+                $carouselItems.append($items.first()); // Move o primeiro item para o final
+                $carouselItems.css("transform", "translateX(0px)");
+                currentPosition = 0;
+                $items = $(".carousel-items .item"); // Atualiza a lista de itens
+            }, 500); // 500ms para sincronizar com a duração da animação
         }
     }
 
     function startAutoSlide() {
-        carouselInterval = setInterval(moveCarousel, intervalTime); // Move para frente a cada intervalo
+        carouselInterval = setInterval(moveCarousel, intervalTime);
     }
 
     function stopAutoSlide() {
@@ -76,12 +85,8 @@ $(document).ready(function () {
     startAutoSlide();
 
     $(window).resize(function () {
-        setupCarousel(); // Ajusta o tamanho e reinicia o carousel
+        setupCarousel(); // Ajusta o tamanho e reinicia o carousel ao redimensionar a janela
     });
 
-    $(".carousel").hover(stopAutoSlide, startAutoSlide);
+    $(".carousel").hover(stopAutoSlide, startAutoSlide); // Pausa o movimento ao passar o mouse sobre o carousel
 });
-
-
-
-

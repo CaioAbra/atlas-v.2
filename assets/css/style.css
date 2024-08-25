@@ -57,8 +57,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: SpaceGrotesk-SemiBold;
+h6,
+.accordion-header {
+  font-family: SpaceGrotesk-Regular;
 }
 
 p,
@@ -66,7 +67,7 @@ a,
 ul,
 li,
 span {
-  font-family: SpaceGrotesk-Regular;
+  font-family: SpaceGrotesk-Light;
 }
 
 header#header nav.navbar {
@@ -147,7 +148,7 @@ header#header nav.navbar.active {
   background: var(--bg-navbar-active);
 }
 header#header nav.navbar .navbar-brand {
-  width: 5rem;
+  width: 3rem;
   margin: auto;
 }
 header#header nav.navbar .navbar-brand img {
@@ -408,7 +409,6 @@ section#dobra_2 .resultados .card {
   /* Necessário para o posicionamento do pseudo-elemento */
   border-radius: 8px;
   /* Borda arredondada */
-  background-color: #1a1a1a;
   /* Cor de fundo do card */
   color: #ffffff;
   /* Cor do texto */
@@ -581,7 +581,6 @@ section#dobra_4 .card {
   /* Necessário para o posicionamento do pseudo-elemento */
   border-radius: 8px;
   /* Borda arredondada */
-  background-color: #1a1a1a;
   /* Cor de fundo do card */
   color: #ffffff;
   /* Cor do texto */
@@ -787,7 +786,6 @@ section#faq-section .accordion .accordion-header {
   align-items: center;
   transition: background 0.2s;
   margin-bottom: 0;
-  font-weight: 700;
   line-height: 1;
   color: var(--color-accordion-header);
 }

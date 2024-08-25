@@ -9,8 +9,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: SpaceGrotesk-SemiBold;
+h6,
+.accordion-header {
+    font-family: SpaceGrotesk-Regular;
 }
 
 p,
@@ -18,5 +19,5 @@ a,
 ul,
 li,
 span {
-    font-family: SpaceGrotesk-Regular;
+    font-family: SpaceGrotesk-Light;
 }

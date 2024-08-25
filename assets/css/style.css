@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-body: #0c0e22;
   --color-hamburger-bar: #d3c2c2;
@@ -14,14 +15,10 @@
   --bg-btn: #f0a747;
   --box-shadow-btn: 0px 20.3px 41.55px 0px #f0a74752;
   --color-btn: #FFFFFF;
-  --color-bg-accordion: linear-gradient(90deg, rgb(0, 117, 255, 0.3) -19%, rgba(255, 119, 26, 0) 120.71%);
+  --color-bg-accordion: #1b1b1b;
   --color-accordion-header: #FFFFFF;
   --color-accordion-header-open: #FFFFFF;
-  --color-accordion-body: #C1C0FA;
-  --color-bg-footer: url("../../src/img/bg-footer.webp");
-  --color-footer-text: #C1C0FA;
-  --color-bg-navbar-active: #0075FF;
-  --color-footer-text-hover: #FFFFFF;
+  --color-accordion-body: #828282;
   --color-orange: #f0a747;
   --color-gray: #828282;
   --color-White: #FFFFFF;
@@ -552,22 +549,73 @@ section#dobra_5 #jumping-image {
   }
 }
 
-section#faq-section {
-  background-image: var(--color-bg-footer);
+section#dobra_6 {
+  min-height: 100vh;
+  background: url("./../../src/img/dobra_6/BG06.webp");
   background-repeat: no-repeat;
-  background-size: 33rem;
-  background-position-y: bottom;
-  background-position-x: -5rem;
+  background-size: cover;
+  background-position: center;
+  /* Mobile: 1 item por vez */
+  /* Tablet: 2 itens por vez */
+  /* Desktop: 3 itens por vez */
+}
+section#dobra_6 h2 {
+  padding-top: 5rem;
+  color: var(--color-White);
+  text-align: center;
+}
+section#dobra_6 p {
+  color: var(--whit-gray);
+  text-align: center;
+}
+section#dobra_6 .carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* ajuste conforme necessário */
+}
+section#dobra_6 .carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+section#dobra_6 .item {
+  transition: transform 0.5s ease-in-out;
+}
+section#dobra_6 .item img {
+  width: 100%;
+  /* ajuste conforme necessário */
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  section#dobra_6 .item {
+    min-width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section#dobra_6 .item {
+    min-width: 50%;
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  section#dobra_6 .item {
+    min-width: 33.33%;
+    margin-left: 0.5rem;
+  }
+}
+
+section#faq-section {
+  background-image: url("./../../src/img/dobra_7/BG07.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section#faq-section .container-faq {
   padding-bottom: 7.5rem;
 }
 section#faq-section h2 {
-  color: var(--color-title-hero-section);
+  color: var(--color-White);
+  padding-top: 5rem;
   padding-bottom: 56px;
-}
-section#faq-section h2 span {
-  color: var(--color-title-detailer-hero-section);
 }
 section#faq-section .accordion {
   width: 100%;
@@ -618,6 +666,9 @@ section#faq-section .accordion .accordion-body.open {
 }
 section#faq-section footer {
   padding-top: 3rem;
+}
+section#faq-section footer img {
+  width: 8rem;
 }
 section#faq-section footer p.direitos {
   color: var(--color-footer-text);
@@ -686,6 +737,9 @@ section#faq-section footer .endPage {
 }
 section#faq-section .title-list {
   color: #FFFFFF;
+}
+section#faq-section .color-whiteGray {
+  color: var(--whit-gray);
 }
 
 * {

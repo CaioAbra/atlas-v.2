@@ -4,12 +4,9 @@ section#faq-section {
     }
 
     h2 {
-        color: var(--color-title-hero-section);
+        color: var(--color-White);
+        padding-top: 5rem;
         padding-bottom: 56px;
-
-        span {
-            color: var(--color-title-detailer-hero-section);
-        }
     }
 
     .accordion {
@@ -69,6 +66,9 @@ section#faq-section {
 
 
     footer {
+        img {
+            width: 8rem;
+        }
 
         padding-top: 3rem;
 
@@ -158,10 +158,15 @@ section#faq-section {
     }
 
 
-    background-image: var(--color-bg-footer);
+    background-image: url("./../../src/img/dobra_7/BG07.webp");
     background-repeat: no-repeat;
-    background-size: 33rem;
-    background-position-y: bottom;
-    background-position-x: -5rem;
+    background-size: cover;
+    // background-position-y: bottom;
+    // background-position-x: -5rem;
+
+
+    .color-whiteGray {
+        color: var(--whit-gray);
+    }
 
 }

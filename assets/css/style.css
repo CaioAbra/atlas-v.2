@@ -944,4 +944,9 @@ span.btn:hover {
   transform: scale(1.1);
 }
 
+.container {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

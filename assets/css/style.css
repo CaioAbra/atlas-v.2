@@ -846,6 +846,43 @@ section#faq-section .title-list {
 section#faq-section .color-whiteGray {
   color: var(--whit-gray);
 }
+section#faq-section .btn.hero.acount {
+  background: linear-gradient(125deg, #F0A647, #BA4C0E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0.5rem 1rem;
+  position: relative;
+  /* Necessário para o posicionamento do pseudo-elemento */
+  border-radius: 8px;
+  /* Borda arredondada */
+  /* Cor de fundo do card */
+  /* Cor do texto */
+  text-align: center;
+  transition: all 0.5s ease;
+}
+section#faq-section .btn.hero.acount::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  /* Mesma borda arredondada do card */
+  padding: 0.6px;
+  /* Espessura da borda */
+  background: linear-gradient(125deg, #F0A647, #BA4C0E);
+  /* Gradiente da borda */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  /* Coloca a borda atrás do conteúdo */
+}
+section#faq-section .btn.hero.acount:hover {
+  transform: scale(1.1);
+}
 
 * {
   box-sizing: border-box;
@@ -881,7 +918,10 @@ body {
 .btn {
   transition: all 0.5s ease;
 }
-.btn:hover {
+span.btn {
+  transition: all 0.5s ease;
+}
+span.btn:hover {
   transform: scale(1.1);
 }
 

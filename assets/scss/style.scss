@@ -35,6 +35,14 @@ body {
     transition: all .5s ease;
 
     &:hover {
+        // transform: scale(1.1);
+    }
+}
+
+span.btn {
+    transition: all .5s ease;
+
+    &:hover {
         transform: scale(1.1);
     }
 }

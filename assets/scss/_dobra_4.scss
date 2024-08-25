@@ -1,0 +1,66 @@
+section#dobra_4 {
+    min-height: 100vh;
+    background: url("./../../src/img/dobra_4/BG04.webp");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    padding-bottom: 5rem;
+
+    h2 {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        color: var(--color-White);
+        font-size: 28px;
+    }
+
+    .mockUp {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        background-color: #090909;
+
+        .card-body {
+            padding: 2.6rem;
+
+            h5 {
+                font-size: 24px;
+                color: var(--color-White);
+            }
+
+            p {
+                color: var(--color-White);
+            }
+        }
+
+        img {
+            width: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        .container-flex {
+            min-width: 100%;
+            padding: 0;
+
+            img {}
+        }
+    }
+
+    .btn.hero {
+        display: inline-flex;
+        background-color: var(--bg-btn);
+        color: #000;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        position: relative;
+        font-size: 12px;
+        align-items: center;
+    }
+}

@@ -450,6 +450,62 @@ section#dobra_3 .cardsIcon .card p {
   }
 }
 
+section#dobra_4 {
+  min-height: 100vh;
+  background: url("./../../src/img/dobra_4/BG04.webp");
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  padding-bottom: 5rem;
+}
+section#dobra_4 h2 {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--color-White);
+  font-size: 28px;
+}
+section#dobra_4 .mockUp {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+section#dobra_4 .card {
+  background-color: #090909;
+}
+section#dobra_4 .card .card-body {
+  padding: 2.6rem;
+}
+section#dobra_4 .card .card-body h5 {
+  font-size: 24px;
+  color: var(--color-White);
+}
+section#dobra_4 .card .card-body p {
+  color: var(--color-White);
+}
+section#dobra_4 .card img {
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  section#dobra_4 .container-flex {
+    min-width: 100%;
+    padding: 0;
+  }
+}
+section#dobra_4 .btn.hero {
+  display: inline-flex;
+  background-color: var(--bg-btn);
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  position: relative;
+  font-size: 12px;
+  align-items: center;
+}
+
 section#faq-section {
   background-image: var(--color-bg-footer);
   background-repeat: no-repeat;

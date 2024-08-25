@@ -19,6 +19,7 @@
   --color-accordion-header: #FFFFFF;
   --color-accordion-header-open: #FFFFFF;
   --color-accordion-body: #828282;
+  --color-footer-text: #afafaf;
   --color-orange: #f0a747;
   --color-gray: #828282;
   --color-White: #FFFFFF;
@@ -767,6 +768,13 @@ body {
 
 .color-gray {
   color: var(--color-gray);
+}
+
+.btn {
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

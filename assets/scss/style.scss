@@ -26,3 +26,11 @@ body {
 .color-gray {
     color: var(--color-gray);
 }
+
+.btn {
+    transition: all .5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

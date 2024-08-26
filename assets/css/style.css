@@ -564,7 +564,7 @@ section#dobra_4 .card .card-body h5 {
   color: transparent;
 }
 section#dobra_4 .card .card-body p {
-  color: var(--whit-gray);
+  color: #acacac;
 }
 section#dobra_4 .card img {
   background: #f0a747;

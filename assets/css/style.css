@@ -2,14 +2,14 @@
 :root {
   --bg-body: #0a0a0a;
   --color-hamburger-bar: #d3c2c2;
-  --bg-navbar-active: #333;
+  --bg-navbar-active: rgba(27, 27, 27, 0.9);
   --color-accordion-header-open: rgba(255, 255, 255, 0.5);
   --color-btn-login-bg: none;
   --color-btn-login-border: #838282;
   --color-btn-login-text: #FFFFFF;
   --color-btn-register-bg: linear-gradient(87.36deg, #F0A647 9.47%, #BA4C0E 128.61%);
   --color-btn-register-text: #FFFFFF;
-  --color-bg-navbar-active: #333;
+  --color-bg-navbar-active: rgba(27, 27, 27, 0.9);
   --color-title-hero-section: #ffffff;
   --color-title-detailer-hero-section: #f0a747;
   --color-text-hero-section: #828282;
@@ -114,7 +114,7 @@ header#header nav.navbar .navbar-container .nav-menu {
 }
 @media screen and (max-width: 768px) {
   header#header nav.navbar .navbar-container .nav-menu.btn_login_register {
-    margin-top: 2rem !important;
+    margin-top: 60.5px !important;
   }
 }
 header#header nav.navbar .navbar-container .nav-menu.btn_login_register.active {
@@ -171,7 +171,7 @@ header#header nav.navbar .navbar-container .nav-menu .btn-register:hover {
   }
 }
 header#header nav.navbar .navbar-brand {
-  width: 3rem;
+  width: 5rem;
 }
 header#header nav.navbar .navbar-brand img {
   width: 100%;

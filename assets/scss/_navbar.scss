@@ -44,7 +44,7 @@ header#header {
 
                 &.btn_login_register {
                     @media screen and (max-width: 768px) {
-                        margin-top: 2rem !important;
+                        margin-top: 60.5px !important;
                     }
 
                     &.active {
@@ -114,7 +114,7 @@ header#header {
         }
 
         .navbar-brand {
-            width: 3rem;
+            width: 5rem;
             // margin: auto;
 
             img {

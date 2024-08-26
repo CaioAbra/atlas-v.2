@@ -41,6 +41,7 @@ body {
 
 span.btn {
     transition: all .5s ease;
+    padding: 0;
 
     &:hover {
         transform: scale(1.1);

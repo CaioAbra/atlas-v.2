@@ -57,7 +57,7 @@ section#faq-section {
             overflow: hidden;
             transition: max-height 0.5s ease, padding 0.5s ease;
             display: none;
-            color: var(--color-accordion-body);
+            color: #acacac;
             font-size: .9rem;
 
             &.open {
@@ -218,7 +218,7 @@ section#faq-section {
             /* Coloca a borda atrás do conteúdo */
         }
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
         }
 

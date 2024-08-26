@@ -12,9 +12,9 @@ section#dobra_3 {
         background-position-x: center;
     }
 
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:500px) and (min-width:320px) {
         background-color: #0a0a0a;
-        background-position-y: -10vh;
+        background-position-y: -16vh;
         background-position-x: center;
     }
 
@@ -35,8 +35,12 @@ section#dobra_3 {
             margin-top: 10rem;
         }
 
-        @media screen and (max-width:500px) {
-            margin-top: 9rem;
+        @media screen and (min-width:375px) {
+            margin-top: 6rem;
+        }
+
+        @media screen and (min-width:500px){
+            margin-top: 8rem;
         }
 
         @media screen and (min-width:768px) {

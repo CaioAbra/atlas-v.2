@@ -19,6 +19,8 @@ section#dobra_2 {
         color: transparent;
     }
 
+
+
     .card {
         margin-top: 3rem;
         background-color: #090909;
@@ -118,9 +120,11 @@ section#dobra_2 {
 
     .resultados {
         p {
-            font-size: 22px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--color-text-hero-section);
             text-align: center;
-            color: var(--whit-gray);
         }
 
         .card {

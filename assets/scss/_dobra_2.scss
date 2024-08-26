@@ -115,6 +115,12 @@ section#dobra_2 {
             /* Coloca a borda atrás do conteúdo */
         }
 
+        &.money {
+            @media screen and (max-width:500px) {
+                min-width: 24rem;
+            }
+        }
+
     }
 
 
@@ -218,6 +224,12 @@ section#dobra_2 {
         img {
             width: 32px;
             // margin-left: .5rem;
+        }
+    }
+
+    .row-money {
+        @media screen and (max-width:500px) {
+            overflow-x: auto !important;
         }
     }
 

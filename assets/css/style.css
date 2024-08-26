@@ -363,6 +363,11 @@ section#dobra_2 .card::before {
   -webkit-mask-composite: destination-out;
   /* Coloca a borda atrás do conteúdo */
 }
+@media screen and (max-width: 500px) {
+  section#dobra_2 .card.money {
+    min-width: 24rem;
+  }
+}
 section#dobra_2 .resultados p {
   font-size: 1rem;
   font-weight: 400;
@@ -442,6 +447,11 @@ section#dobra_2 .btn.hero {
 }
 section#dobra_2 .row-btn img {
   width: 32px;
+}
+@media screen and (max-width: 500px) {
+  section#dobra_2 .row-money {
+    overflow-x: auto !important;
+  }
 }
 
 section#dobra_3 {

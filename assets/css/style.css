@@ -446,11 +446,25 @@ section#dobra_2 .row-btn img {
 
 section#dobra_3 {
   min-height: 100vh;
-  background: url("./../../src/img/dobra_3/BG03.webp");
+  background-image: url("./../../src/img/dobra_3/BG03.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4rem;
+}
+@media screen and (max-width: 320px) {
+  section#dobra_3 {
+    background-color: #0a0a0a;
+    background-position-y: -15vh;
+    background-position-x: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#dobra_3 {
+    background-color: #0a0a0a;
+    background-position-y: -10vh;
+    background-position-x: center;
+  }
 }
 section#dobra_3 h2 {
   text-align: center;
@@ -463,6 +477,16 @@ section#dobra_3 img {
   margin-top: 18rem;
   margin-bottom: 5rem;
   transform: scale(1.5);
+}
+@media screen and (max-width: 320px) {
+  section#dobra_3 img {
+    margin-top: 10rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#dobra_3 img {
+    margin-top: 9rem;
+  }
 }
 @media screen and (min-width: 768px) {
   section#dobra_3 img {

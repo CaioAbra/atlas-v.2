@@ -25,7 +25,7 @@ section#dobra_3 {
         color: var(--color-orange);
     }
 
-    img {
+    img.mockupcenter {
         width: 100%;
         margin-top: 18rem;
         margin-bottom: 5rem;
@@ -39,7 +39,7 @@ section#dobra_3 {
             margin-top: 6rem;
         }
 
-        @media screen and (min-width:500px){
+        @media screen and (min-width:500px) {
             margin-top: 8rem;
         }
 
@@ -94,6 +94,17 @@ section#dobra_3 {
                     font-size: 18px;
                 }
             }
+        }
+    }
+
+    .title {
+        width: 100%;
+        transform: scale(1);
+        margin-top: 6rem;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            width: 50%;
         }
     }
 

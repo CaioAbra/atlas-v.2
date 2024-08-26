@@ -473,40 +473,40 @@ section#dobra_3 h2 {
   letter-spacing: 22px;
   color: var(--color-orange);
 }
-section#dobra_3 img {
+section#dobra_3 img.mockupcenter {
   width: 100%;
   margin-top: 18rem;
   margin-bottom: 5rem;
   transform: scale(1.5);
 }
 @media screen and (max-width: 320px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 10rem;
   }
 }
 @media screen and (min-width: 375px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 6rem;
   }
 }
 @media screen and (min-width: 500px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 9rem;
     transform: scale(1);
   }
 }
 @media screen and (min-width: 1024px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 4.5rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  section#dobra_3 img {
+  section#dobra_3 img.mockupcenter {
     margin-top: 0.7rem;
   }
 }
@@ -541,6 +541,17 @@ section#dobra_3 .cardsIcon .card p {
 @media screen and (max-width: 768px) {
   section#dobra_3 .cardsIcon .card p {
     font-size: 18px;
+  }
+}
+section#dobra_3 .title {
+  width: 100%;
+  transform: scale(1);
+  margin-top: 6rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  section#dobra_3 .title {
+    width: 50%;
   }
 }
 
